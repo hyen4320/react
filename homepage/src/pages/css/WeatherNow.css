@@ -1,0 +1,72 @@
+/* 전체적인 레이아웃 설정 */
+.weather-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+  }
+  
+  /* 타이틀 스타일 */
+  .weather-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* 로딩 중 텍스트 스타일 */
+  .weather-container p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* 에러 메시지 스타일 */
+  .weather-container p.error {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* API에서 가져온 데이터를 JSON 형식으로 보기 좋게 출력 */
+  .weather-info {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* 입력 폼 스타일 */
+  .weather-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* 위치 관련 알림 스타일 */
+  .alert {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fffcf0;
+    color: #555;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,122 @@
+/* Reset 기본 스타일 */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* 상단 메뉴 */
+.top-menu {
+  position: fixed;
+  top: 0;
+  width: 100%; /* 메뉴바 너비 */
+  max-width: 1500px; /* 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  height: 70px; /* 높이 늘리기 */
+  background-color: #333; /* 메뉴 배경색 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* 좌우 패딩을 적당히 넓힘 */
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 메뉴 하단 그림자 */
+}
+
+/* 로고 스타일 */
+.top-menu .logo {
+  font-size: 24px; /* 로고 글꼴 크기 키움 */
+  font-weight: bold;
+}
+
+/* 메뉴 리스트 */
+.top-menu .menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* 개별 메뉴 항목 */
+.top-menu .menu li {
+  margin: 0 20px; /* 메뉴 항목 간 간격을 늘림 */
+}
+
+/* 링크 스타일 */
+.top-menu .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px; /* 메뉴 글꼴 크기 */
+  transition: color 0.3s;
+}
+
+.top-menu .menu a:hover {
+  color: #1abc9c; /* 링크 호버 시 색상 */
+}
+
+/* 콘텐츠 영역 */
+.content {
+  margin-top: 70px; /* 상단 메뉴 높이만큼 여백 추가 */
+  padding: 20px;
+}
+
+/* 섹션 스타일 */
+section {
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd; /* 섹션 구분선 */
+}
+
+section h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+/* 모바일 대응: 화면이 768px 이하일 경우 */
+@media (max-width: 768px) {
+  .top-menu {
+    padding: 0 20px; /* 여백을 약간 줄임 */
+    height: 60px; /* 메뉴 높이 조정 */
+  }
+
+  .top-menu .logo {
+    font-size: 20px; /* 로고 글꼴 크기 줄이기 */
+  }
+
+  .top-menu .menu li {
+    margin: 0 15px; /* 메뉴 항목 간격 줄이기 */
+  }
+
+  .top-menu .menu a {
+    font-size: 16px; /* 메뉴 글꼴 크기 줄이기 */
+  }
+
+  /* 콘텐츠 섹션 글꼴 크기 줄이기 */
+  section h1 {
+    font-size: 28px;
+  }
+}
+
+/* 매우 작은 화면(모바일) 대응 */
+@media (max-width: 480px) {
+  .top-menu {
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+
+  .top-menu .logo {
+    font-size: 18px; /* 로고 글꼴 크기 줄이기 */
+  }
+
+  .top-menu .menu li {
+    margin: 8px 0; /* 메뉴 항목 간격 더 줄이기 */
+  }
+
+  section h1 {
+    font-size: 22px;
+  }
+}
